@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardBackgroundColor="#fff"
+               app:cardUseCompatPadding="true"
+               app:cardCornerRadius="3dp"
+               app:cardElevation="3dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="5dp"
+                   >
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="20sp"
+                       android:textColor="@color/purple_500"
+                       android:text="Result"/>
+
+                   <EditText
+                       android:id="@+id/resultEt"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColor="#000"
+                       android:padding="5dp"
+                       android:background="@null"
+                       android:autoLink="all"
+                       android:hint=""/>
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:cardBackgroundColor="#fff"
+               app:cardUseCompatPadding="true"
+               app:cardCornerRadius="3dp"
+               app:cardElevation="3dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="5dp"
+                   >
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textSize="20sp"
+                       android:textColor="@color/purple_500"
+                       android:text="Image Preview"/>
+
+                   <ImageView
+                        android:layout_marginTop="10dp"
+                       android:id="@+id/imageIv"
+                       android:layout_width="wrap_content"
+                       android:layout_height="250dp"
+                       android:background="#BBF1D6"
+
+
+                      />
+<!--                     android:maxHeight="250dp"
+                       android:background="#615F5F" -->
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+
+
+       </LinearLayout>
+
+
+   </ScrollView>
+
+</RelativeLayout>
